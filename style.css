@@ -1,0 +1,40 @@
+html{
+ 
+    animation: mymove 5s infinite;    
+}
+h2{
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+#start-btn:hover{
+    background-color: black;
+    color: rgb(88, 31, 179);
+    transition: 0.8s;
+  
+}
+#next-btn:hover{
+    background-color: black;
+    color: deepskyblue;
+    transition: 0.8s; 
+}
+
+div{
+    text-align: center;
+    box-shadow: 50px;
+}
+.btn-grid{
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    gap: 10px;
+    margin: 20px 0;
+}
+.btn{
+    --hue:var(--hue netural);
+    border: 1px solid hsl(var(--hue), 100%, 30%);
+    background-color: hsl(var(--hue),100%, 50%);
+    border-radius: 5px;
+    padding: 5px 10px;
+    color: white;
+    outline: none;
+}
